@@ -1,6 +1,5 @@
 // https://omdbapi.com/?s=fast&apikey=5b537eef
-const input = document.getElementById('myInput');
-function movieSearch(input) {
+const input = document.getElementById('myInput').value;
+function movieSearch() {
     console.log(input);
 }
-movieSearch();
