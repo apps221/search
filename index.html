@@ -9,23 +9,28 @@
     <title>Movie Search</title>
 </head>
 <body>
-  <section id = "searchbar">
+<section id = "searchbar">
+  <div class="container">
+    <div class="row">
 <div class="search">
 <input type="search" id="myInput" onsearch="movieSearch()" placeholder = "Search for movies...">
 <button id = "searchButton" onclick ="movieSearch()">
   <i class="fa-solid fa-magnifying-glass"></i>
 </button>
 </div>
+</div>
+</div>
 </section>
 <section>
   <img src="movies.jpg" alt="" class="background__img">
-  <div class="movie-search__title">Movie Results</div>
+  <div class="movie-search__title">Movie Results <i class="fa-solid fa-arrow-down"></i></div>
 </section>
-<section id = "movieposters">
+<section>
    <div class="container">
         <div class="row">
-          <div class="movie-list">
+          <div class="movie-list" id = "movieposters">
         </div>
+      </div>
       </div>
     </section>
 </body>

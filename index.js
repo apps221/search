@@ -1,7 +1,6 @@
 // https://omdbapi.com/?s=fast&apikey=5b537eef
 const movieList = document.querySelector('.movie-list');
 const input = document.getElementById('myInput');
-const targetSection = document.getElementById('moviePosters');
 //remember to use input.value to access input text
 async function movieSearch() {
     const inputValue = input.value;
@@ -34,5 +33,5 @@ async function movieSearch() {
   
 }
 function scrollToSection() {
-  targetSection.scrollIntoView({ behavior: 'smooth' });
+  movieList.scrollIntoView({ behavior: 'smooth' });
 }
