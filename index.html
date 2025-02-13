@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/1de6adc825.js" crossorigin="anonymous"></script>
     <title>Movie Search</title>
 </head>
 <body>
+  <section id = "searchbar">
 <div class="search">
 <input type="search" id="myInput" onsearch="movieSearch()" placeholder = "Search for movies...">
-<button id = "searchButton" onclick = "movieSearch()">Search</button>
+<button id = "searchButton" onclick = "movieSearch()">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
 </div>
+</section>
+<section>
+  <img src="movies.jpg" alt="" class="background__img">
+  <div class="movie-search__title">Movie Results</div>
+</section>
+<section id = "movieposters">
    <div class="container">
         <div class="row">
           <div class="movie-list">
         </div>
       </div>
+    </section>
 </body>
 </html>

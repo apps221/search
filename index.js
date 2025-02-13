@@ -6,8 +6,8 @@ async function movieSearch() {
     const inputValue = input.value;
     const movies = await fetch(`https://omdbapi.com/?s=${inputValue}&apikey=5b537eef`);
     const moviesData = await movies.json();
-   const moviesFive = moviesData.Search.slice(0,5);
-   console.log(moviesFive);
+    const moviesFive = moviesData.Search.slice(0, 5);
+    console.log(moviesFive);
     movieList.innerHTML = moviesFive.map(movie => 
         `<div class="movie-list">
             <div class="movie">
@@ -25,4 +25,3 @@ async function movieSearch() {
         </div>`
     ).join("");
 }
-
